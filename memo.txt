@@ -1,0 +1,17 @@
+postgres://bycwanchtemxlz:f49440a5185ab031a6966ac555abd14c5bdf1317e543622f24ca3009baf864f3@ec2-3-218-149-60.compute-1.amazonaws.com:5432/d1m4frl3ktqek7
+postgres://<ユーザー>:<パスワード>@<ホスト>:<ポート>/<データベース名>
+
+ユーザー名: bycwanchtemxlz
+パスワード: f49440a5185ab031a6966ac555abd14c5bdf1317e543622f24ca3009baf864f3
+ホスト: ec2-3-218-149-60.compute-1.amazonaws.com
+ポート: 5432
+データベース名: d1m4frl3ktqek7
+
+heroku config:set DB_CONNECTION=pgsql -a simpleboard-shima
+heroku config:set DB_DATABASE=d1m4frl3ktqek7 -a simpleboard-shima
+heroku config:set DB_HOST=ec2-3-218-149-60.compute-1.amazonaws.com -a simpleboard-shima
+heroku config:set DB_PASSWORD=f49440a5185ab031a6966ac555abd14c5bdf1317e543622f24ca3009baf864f3 -a simpleboard-shima
+heroku config:set DB_PORT=5432 -a simpleboard-shima
+heroku config:set DB_USERNAME=bycwanchtemxlz -a simpleboard-shima
+
+heroku config:set APP_KEY=base64:biJQLaPf1FcFruVobRUWvAkCooIx7WY1ns8UXCFnRNY=
